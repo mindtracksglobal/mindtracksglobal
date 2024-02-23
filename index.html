@@ -21,7 +21,7 @@
         }
 
         header, footer {
-            background-color: #0d47a1;
+            background-color: #4dabf5; /* Light blue similar to Philips */
             color: #fff;
             padding: 10px 0;
         }
@@ -31,6 +31,7 @@
             font-family: 'Arial', sans-serif;
             font-weight: bold;
             text-transform: uppercase;
+            color: #fff; /* White color for text */
         }
 
         nav ul {
@@ -56,14 +57,20 @@
         h2 {
             text-align: center;
             font-family: 'Arial', sans-serif;
-            color: #0d47a1;
+            color: #4dabf5; /* Light blue similar to Philips */
         }
 
         /* Hero Section */
         #hero {
-            background-color: #0d47a1;
+            background-color: #4dabf5; /* Light blue similar to Philips */
             text-align: center;
             color: #fff;
+            padding: 50px 0;
+        }
+
+        #hero h2 {
+            margin-bottom: 20px;
+            color: #fff; /* White color for text */
         }
 
         /* Services Section */
@@ -73,7 +80,7 @@
 
         .service h3 {
             margin-top: 0;
-            color: #0d47a1;
+            color: #4dabf5; /* Light blue similar to Philips */
         }
 
         /* Testimonials Section */
@@ -82,6 +89,21 @@
         }
 
         /* Contact Section */
+        .contact-options {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .contact-options a {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .contact-options img {
+            width: 50px;
+            height: auto;
+        }
+
         form {
             max-width: 600px;
             margin: 0 auto;
@@ -96,7 +118,7 @@
         }
 
         form button {
-            background-color: #0d47a1;
+            background-color: #4dabf5; /* Light blue similar to Philips */
             color: #fff;
             border: none;
             padding: 10px 20px;
@@ -140,7 +162,7 @@
     <section id="hero">
         <div class="container">
             <h2>Your Premier IT Consulting Partner</h2>
-            <p>Unlock the potential of your business with innovative IT solutions</p>
+            <p>Unlock the potential of your business with innovative IT solutions. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eleifend dui nec dapibus tempus.</p>
             <a href="#contact" class="btn">Get Started</a>
         </div>
     </section>
@@ -150,54 +172,10 @@
             <h2>Our Services</h2>
             <div class="service">
                 <h3>IT Consulting</h3>
-                <p>Strategic guidance and technical expertise to optimize your IT infrastructure.</p>
+                <p>Strategic guidance and technical expertise to optimize your IT infrastructure. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="service">
                 <h3>Website Development</h3>
-                <p>Bespoke website solutions tailored to your business needs.</p>
+                <p>Bespoke website solutions tailored to your business needs. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-            <div class="service">
-                <h3>Testing Services</h3>
-                <p>Comprehensive testing to ensure the quality and reliability of your software.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="testimonials">
-        <div class="container">
-            <h2>Client Testimonials</h2>
-            <div class="testimonial">
-                <p>"MindTracks exceeded our expectations with their expertise and professionalism. Their guidance has been invaluable in streamlining our IT operations." - John Doe, CEO</p>
-            </div>
-            <div class="testimonial">
-                <p>"Working with MindTracks was a game-changer for our business. Their website development team brought our vision to life with precision and creativity." - Jane Smith, Marketing Director</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form action="send_message.php" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 MindTracks. All rights reserved.</p>
-            <nav>
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
-
-</body>
-</html>
+          
