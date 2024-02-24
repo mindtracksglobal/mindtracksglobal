@@ -6,6 +6,11 @@
     <title>MindTracks - Empowering Businesses</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <style>
+        .section {
+            padding: 50px 0;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -36,92 +41,106 @@
     <div class="jumbotron jumbotron-fluid bg-info text-white text-center">
         <div class="container">
             <h1 class="display-4">Empowering Businesses</h1>
-            <p class="lead">In the vibrant tapestry of India's digital landscape, MindTracks emerges as a thread of innovation, weaving together technology, expertise, and cultural understanding.</p>
+            <p class="lead">In the digital landscape, MindTracks emerges as a thread of innovation, weaving together technology, expertise, and cultural understanding.</p>
             <a href="#contact" class="btn btn-primary btn-lg">Get Started</a>
         </div>
     </div>
 
-    <div class="container" ng-show="showServicesFlag">
-        <h2 class="text-center mb-5">Our Symphony of Services</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Strategic IT Consulting</h5>
-                        <p class="card-text">Chart a course through the digital jungle, navigating regulations and trends with clarity. We become your trusted guide, unveiling opportunities and crafting a roadmap to success.</p>
+    <div class="section bg-light" ng-show="showServicesFlag">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Symphony of Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Strategic IT Consulting</h5>
+                            <p class="card-text">Chart a course through the digital jungle, navigating regulations and trends with clarity. We become your trusted guide, unveiling opportunities and crafting a roadmap to success.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Bespoke Website Development</h5>
-                        <p class="card-text">Your online presence sings with vibrancy, reflecting your brand's essence and captivating your audience. We weave cultural nuances into every pixel, ensuring a symphony of engagement.</p>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Bespoke Website Development</h5>
+                            <p class="card-text">Your online presence sings with vibrancy, reflecting your brand's essence and captivating your audience. We weave cultural nuances into every pixel, ensuring a symphony of engagement.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Rigorous Software Testing</h5>
-                        <p class="card-text">Our meticulous testing orchestra ensures your software performs a flawless ballet, delighting users and guarding against vulnerabilities. We test for functionality, performance, and security, leaving no note unturned.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container" ng-show="showFeaturesFlag">
-        <h2 class="text-center mb-5">Key Differentiators</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">India's Rhythm Pulsating in Our Veins</h5>
-                        <p class="card-text">We understand the unique cultural beat of Indian business, ensuring your solutions resonate deeply and comply with local regulations.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Collaboration's Harmonious Melody</h5>
-                        <p class="card-text">We work hand-in-hand with you, fostering open communication and building a trusting partnership. Together, we compose a symphony of success.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Data-Driven Insights Guide the Chorus</h5>
-                        <p class="card-text">We leverage data and industry knowledge to tailor recommendations that perfectly harmonize with your specific needs and goals.</p>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Rigorous Software Testing</h5>
+                            <p class="card-text">Our meticulous testing orchestra ensures your software performs a flawless ballet, delighting users and guarding against vulnerabilities. We test for functionality, performance, and security, leaving no note unturned.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container" ng-show="showCareersFlag">
-        <h2 class="text-center mb-5">Join Our Team</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Software Engineer</h5>
-                        <p class="card-text">We're looking for passionate software engineers to join our dynamic team. If you have experience in web development and a desire to innovate, we want to hear from you!</p>
-                        <a href="#" class="btn btn-primary">Apply Now</a>
+    <div class="section" ng-show="showFeaturesFlag">
+        <div class="container">
+            <h2 class="text-center mb-5">Key Differentiators</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">India's Rhythm Pulsating in Our Veins</h5>
+                            <p class="card-text">We understand the unique cultural beat of Indian business, ensuring your solutions resonate deeply and comply with local regulations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Collaboration's Harmonious Melody</h5>
+                            <p class="card-text">We work hand-in-hand with you, fostering open communication and building a trusting partnership. Together, we compose a symphony of success.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Data-Driven Insights Guide the Chorus</h5>
+                            <p class="card-text">We leverage data and industry knowledge to tailor recommendations that perfectly harmonize with your specific needs and goals.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">UI/UX Designer</h5>
-                        <p class="card-text">Do you have a keen eye for design and a passion for creating intuitive user experiences? Join us as a UI/UX designer and help shape the future of digital interactions.</p>
-                        <a href="#" class="btn btn-primary">Apply Now</a>
+        </div>
+    </div>
+
+    <div class="section bg-light" ng-show="showCareersFlag">
+        <div class="container">
+            <h2 class="text-center mb-5">Join Our Team</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Software Engineer</h5>
+                            <p class="card-text">We're looking for passionate software engineers to join our dynamic team. If you have experience in web development and a desire to innovate, we want to hear from you!</p>
+                            <a href="#" class="btn btn-primary">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">UI/UX Designer</h5>
+                            <p class="card-text">Do you have a keen eye for design and a passion for creating intuitive user experiences? Join us as a UI/UX designer and help shape the future of digital interactions.</p>
+                            <a href="#" class="btn btn-primary">Apply Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="section" id="contact">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <p class="text-center">Ready to unlock your business potential with MindTracks? Let's discuss your unique needs. We'll compose a digital masterpiece that propels your success, ensuring every note resonates, every function performs flawlessly, and your business thrives in the vibrant symphony of India's digital landscape.</p>
+            <p class="text-center">Connect with us on <a href="https://www.linkedin.com/company/the-mind-tracks/">LinkedIn</a> or drop us an email at contact@mindtracks.com.</p>
         </div>
     </div>
 
@@ -131,4 +150,37 @@
             <nav>
                 <ul class="list-inline">
                     <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-                    <li class="list-inline-item"><a href="#">Terms of Service</a
+                    <li class="list-inline-item"><a href="#">Terms of Service</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        angular.module('mindTracksApp', [])
+            .controller('MainController', function($scope) {
+                $scope.showServicesFlag = true;
+                $scope.showFeaturesFlag = false;
+                $scope.showCareersFlag = false;
+
+                $scope.showServices = function() {
+                    $scope.showServicesFlag = true;
+                    $scope.showFeaturesFlag = false;
+                    $scope.showCareersFlag = false;
+                };
+
+                $scope.showFeatures = function() {
+                    $scope.showServicesFlag = false;
+                    $scope.showFeaturesFlag = true;
+                    $scope.showCareersFlag = false;
+                };
+
+                $scope.showCareers = function() {
+                    $scope.showServicesFlag = false;
+                    $scope.showFeaturesFlag = false;
+                    $scope.showCareersFlag = true;
+                };
+            });
+    </script>
+</body>
+</html>
