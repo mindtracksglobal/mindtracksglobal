@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="mindTracksApp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MindTracks - Empowering Businesses</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <style>
         /* Global Styles */
         body {
@@ -31,60 +32,15 @@
             color: #fff; /* White color for text */
         }
 
-        /* Services Section */
-        .service {
-            margin-bottom: 30px;
-        }
-
-        .service h3 {
-            color: #4dabf5; /* Light blue similar to Philips */
-        }
-
-        /* Features Section */
-        .feature {
-            margin-bottom: 30px;
-        }
-
-        .feature-icon {
-            font-size: 3rem;
-            color: #4dabf5; /* Light blue similar to Philips */
-        }
-
-        /* Testimonials Section */
-        .testimonial {
-            margin-bottom: 20px;
-        }
-
-        /* Contact Section */
-        .contact-options {
-            margin-bottom: 50px;
-        }
-
-        .contact-options a {
-            display: inline-block;
-            margin-right: 20px;
-            color: #4dabf5; /* Light blue similar to Philips */
-        }
-
-        .form-control {
-            margin-bottom: 20px;
-        }
-
-        .footer {
-            background-color: #4dabf5; /* Light blue similar to Philips */
-            color: #fff; /* White color for text */
-            padding: 20px 0;
-        }
-
         /* Button Styles */
         .btn-primary {
-            background-color: #ff8f00; /* Darker shade of orange */
-            border-color: #ff8f00; /* Border color matches background */
+            background-color: #808080; /* Grey color */
+            border-color: #808080; /* Border color matches background */
         }
 
         .btn-primary:hover {
-            background-color: #ff6f00; /* Slightly darker shade of orange on hover */
-            border-color: #ff6f00;
+            background-color: #696969; /* Darker shade of grey on hover */
+            border-color: #696969;
         }
     </style>
 </head>
@@ -98,16 +54,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
+                        <a class="nav-link" href="#" ng-click="showServices()">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
+                        <a class="nav-link" href="#" ng-click="showFeatures()">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#testimonials">Testimonials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#careers">Careers</a>
+                        <a class="nav-link" href="#" ng-click="showCareers()">Careers</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -123,7 +76,7 @@
         <a class="btn btn-primary btn-lg" href="#contact" role="button">Get Started</a>
     </div>
 
-    <section id="services" class="container">
+    <div class="container" ng-show="showServicesFlag">
         <h2 class="text-center mb-5">Our Symphony of Services</h2>
         <div class="row">
             <div class="col-md-4">
@@ -145,9 +98,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="features" class="container">
+    <div class="container" ng-show="showFeaturesFlag">
         <h2 class="text-center mb-5">Key Differentiators</h2>
         <div class="row">
             <div class="col-md-4">
@@ -172,25 +125,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="testimonials" class="container">
-        <h2 class="text-center mb-5">Success Stories Echoing Triumph</h2>
-        <div class="row">
-            <div class="col-md-6 mx-auto">
-                <div class="testimonial">
-                    <p>"MindTracks helped us navigate the digital transformation maze, their expertise ensuring our mobile app's security sang true. Their cultural understanding resonated like a familiar melody." - Raj Sharma, CEO, Namaste Retail</p>
-                </div>
-            </div>
-            <div class="col-md-6 mx-auto">
-                <div class="testimonial">
-                    <p>"Working with MindTracks was a refreshing breeze, their website development capturing our brand's essence like a perfectly composed raga. Their rigorous testing ensured a flawless launch, applause echoing from our users." - Priya Singh, Marketing Manager, Chai Connect</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="careers" class="container">
+    <div class="container" ng-show="showCareersFlag">
         <h2 class="text-center mb-5">Join Our Team</h2>
         <div class="row">
             <div class="col-md-6 mx-auto">
@@ -208,26 +145,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <section id="contact" class="container">
-        <h2 class="text-center mb-5">Contact Us</h2>
-        <div class="contact-options text-center mb-5">
-            <a href="https://www.linkedin.com/company/the-mind-tracks/" target="_blank" class="btn btn-primary btn-lg"><i class="fab fa-linkedin"></i> Follow us on LinkedIn</a>
-        </div>
-        <form>
-            <div class="form-group">
-                <input type="text" class="form-control" id="name" placeholder="Your Name">
-            </div>
-            <div class="form-group">
-                <input type="email" class="form-control" id="email" placeholder="Your Email">
-            </div>
-            <div class="form-group">
-                <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-lg btn-block">Send Message</button>
-        </form>
-    </section>
+    </div>
 
     <footer class="footer text-center">
         <div class="container">
@@ -242,5 +160,31 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        angular.module('mindTracksApp', [])
+            .controller('MainController', function($scope) {
+                $scope.showServicesFlag = true;
+                $scope.showFeaturesFlag = false;
+                $scope.showCareersFlag = false;
+
+                $scope.showServices = function() {
+                    $scope.showServicesFlag = true;
+                    $scope.showFeaturesFlag = false;
+                    $scope.showCareersFlag = false;
+                };
+
+                $scope.showFeatures = function() {
+                    $scope.showServicesFlag = false;
+                    $scope.showFeaturesFlag = true;
+                    $scope.showCareersFlag = false;
+                };
+
+                $scope.showCareers = function() {
+                    $scope.showServicesFlag = false;
+                    $scope.showFeaturesFlag = false;
+                    $scope.showCareersFlag = true;
+                };
+            });
+    </script>
 </body>
 </html>
